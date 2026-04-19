@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chikitha Reddy Thipparthi — PR &amp; Brand Communications</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Didact+Gothic&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --cotton:#EDEBDD;
+  --cotton2:#F5F3EB;
+  --cotton3:#FAF9F5;
+  --cherry:#810100;
+  --cherry-dk:#630000;
+  --cherry-lt:rgba(129,1,0,0.08);
+  --maroon:#630000;
+  --noir:#1B1717;
+  --noir2:#2A2222;
+  --noir3:#3D3333;
+  --mid:#7A6060;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Jost',sans-serif;
+  background:var(--noir);
+  color:var(--cotton);
+  overflow-x:hidden;
+  cursor:default;
+}
+
+/* ─── CUSTOM CURSOR ─── */
+body *{cursor:default}
+a,button{cursor:pointer}
+
+/* ─── PAGE LOAD ANIMATIONS ─── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(32px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes slideRight{
+  from{width:0}
+  to{width:100%}
+}
+@keyframes revealLine{
+  from{transform:scaleX(0)}
+  to{transform:scaleX(1)}
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(28px);
+  transition:opacity 0.85s cubic-bezier(.22,1,.36,1), transform 0.85s cubic-bezier(.22,1,.36,1);
+}
+.reveal.in{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ─── NAVIGATION ─── */
+nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:stretch;
+  background:var(--noir);
+  border-bottom:1px solid rgba(237,235,221,0.08);
+  height:56px;
+}
+.nav-left{
+  display:flex;
+  align-items:center;
+  padding:0 40px;
+  border-right:1px solid rgba(237,235,221,0.08);
+}
+.nav-monogram{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;
+  font-weight:300;
+  letter-spacing:0.25em;
+  color:var(--cotton);
+}
+.nav-monogram span{color:var(--cherry);margin:0 3px}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:0;
+  flex:1;
+  justify-content:center;
+}
+.nav-links a{
+  font-size:9px;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.4);
+  text-decoration:none;
+  padding:0 28px;
+  height:100%;
+  display:flex;
+  align-items:center;
+  font-weight:400;
+  border-right:1px solid rgba(237,235,221,0.06);
+  transition:color .25s, background .25s;
+}
+.nav-links a:first-child{border-left:1px solid rgba(237,235,221,0.06)}
+.nav-links a:hover{color:var(--cotton);background:rgba(237,235,221,0.04)}
+.nav-right{
+  display:flex;
+  align-items:center;
+  padding:0 32px;
+  border-left:1px solid rgba(237,235,221,0.08);
+}
+.nav-status{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:9px;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.3);
+}
+.status-dot{
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--cherry);
+  animation:pulse 2.5s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:0.5;transform:scale(0.8)}
+}
+
+/* ─── HERO ─── */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding-top:56px;
+  position:relative;
+  overflow:hidden;
+}
+.hero-left{
+  background:var(--noir);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:80px 64px;
+  position:relative;
+  z-index:2;
+  animation:fadeUp 1s cubic-bezier(.22,1,.36,1) 0.2s both;
+}
+.hero-edition{
+  font-size:8px;
+  letter-spacing:0.45em;
+  text-transform:uppercase;
+  color:var(--cherry);
+  margin-bottom:48px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  font-weight:400;
+}
+.hero-edition::before{
+  content:'';
+  width:32px;height:1px;
+  background:var(--cherry);
+}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(56px,6.5vw,96px);
+  font-weight:300;
+  line-height:0.88;
+  letter-spacing:0.01em;
+  color:var(--cotton);
+  margin-bottom:8px;
+}
+.hero-name-line2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(36px,4vw,60px);
+  font-style:italic;
+  font-weight:300;
+  color:var(--cherry);
+  letter-spacing:0.04em;
+  display:block;
+  margin-top:8px;
+}
+.hero-divider{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin:40px 0;
+}
+.hero-divider-line{
+  flex:1;height:1px;
+  background:linear-gradient(90deg,var(--cherry),transparent);
+}
+.hero-divider-diamond{
+  width:6px;height:6px;
+  background:var(--cherry);
+  transform:rotate(45deg);
+  flex-shrink:0;
+}
+.hero-role{
+  font-size:11px;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.5);
+  line-height:2.4;
+  font-weight:300;
+}
+.hero-contact{
+  margin-top:48px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.hero-contact-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-size:12px;
+  color:rgba(237,235,221,0.45);
+  letter-spacing:0.06em;
+  font-weight:300;
+}
+.hero-contact-item::before{
+  content:'';
+  width:18px;height:1px;
+  background:var(--cherry);
+  flex-shrink:0;
+}
+.hero-right{
+  background:var(--cherry-dk);
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  animation:fadeIn 1.2s ease 0.5s both;
+}
+.hero-right-texture{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+.hero-right-content{
+  position:relative;
+  z-index:2;
+  padding:64px 52px;
+}
+.hero-stat-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:rgba(237,235,221,0.08);
+  margin-bottom:40px;
+}
+.hero-stat{
+  background:var(--maroon);
+  padding:28px 24px;
+}
+.hero-stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:42px;
+  font-weight:300;
+  color:var(--cotton);
+  line-height:1;
+  margin-bottom:6px;
+}
+.hero-stat-label{
+  font-size:8px;
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.4);
+  font-weight:300;
+}
+.hero-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;
+  font-style:italic;
+  font-weight:300;
+  color:rgba(237,235,221,0.6);
+  line-height:1.6;
+  letter-spacing:0.02em;
+}
+.hero-quote-mark{
+  font-size:60px;
+  color:var(--cherry);
+  opacity:0.4;
+  line-height:0.5;
+  display:block;
+  margin-bottom:16px;
+  font-family:'Cormorant Garamond',serif;
+}
+
+/* ─── SECTION SHARED ─── */
+.section-tag{
+  font-size:8px;
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  color:var(--cherry);
+  margin-bottom:12px;
+  font-weight:400;
+}
+.section-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(38px,4vw,60px);
+  font-weight:300;
+  line-height:1.0;
+  color:var(--cotton);
+}
+.section-heading em{
+  font-style:italic;
+  color:var(--cherry);
+}
+.section-rule{
+  width:48px;height:1px;
+  background:var(--cherry);
+  margin:24px 0 0;
+  transform-origin:left;
+}
+
+/* ─── EXPERTISE ─── */
+.expertise-wrap{
+  background:var(--noir2);
+  padding:96px 0 0;
+}
+.expertise-intro{
+  padding:0 64px 72px;
+}
+.expertise-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(237,235,221,0.07);
+}
+.exp-cell{
+  padding:52px 44px;
+  border-right:1px solid rgba(237,235,221,0.07);
+  border-bottom:1px solid rgba(237,235,221,0.07);
+  position:relative;
+  overflow:hidden;
+  transition:background 0.4s;
+}
+.exp-cell::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:0;
+  width:0;height:2px;
+  background:var(--cherry);
+  transition:width 0.4s cubic-bezier(.22,1,.36,1);
+}
+.exp-cell:hover{background:rgba(129,1,0,0.06)}
+.exp-cell:hover::after{width:100%}
+.exp-cell:nth-child(3n){border-right:none}
+.exp-cell-roman{
+  font-family:'Cormorant Garamond',serif;
+  font-size:52px;
+  font-weight:300;
+  color:rgba(237,235,221,0.06);
+  line-height:1;
+  margin-bottom:20px;
+}
+.exp-cell-title{
+  font-family:'Didact Gothic',sans-serif;
+  font-size:12px;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--cotton);
+  margin-bottom:14px;
+}
+.exp-cell-accent{
+  width:20px;height:1.5px;
+  background:var(--cherry);
+  margin-bottom:16px;
+}
+.exp-cell-text{
+  font-size:12px;
+  color:rgba(237,235,221,0.45);
+  line-height:1.9;
+  font-weight:300;
+}
+
+/* ─── TOOLS BAND ─── */
+.tools-band{
+  background:var(--cherry);
+  padding:20px 0;
+  overflow:hidden;
+}
+.tools-track{
+  display:flex;
+  animation:tools-scroll 32s linear infinite;
+  width:max-content;
+}
+.tools-track:hover{animation-play-state:paused}
+@keyframes tools-scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.tool-item{
+  font-size:9px;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.65);
+  padding:0 32px;
+  white-space:nowrap;
+  font-weight:300;
+  display:flex;
+  align-items:center;
+  gap:32px;
+  font-family:'Jost',sans-serif;
+}
+.tool-item::after{
+  content:'';
+  width:3px;height:3px;
+  background:rgba(255,255,255,0.4);
+  display:inline-block;
+  flex-shrink:0;
+}
+
+/* ─── EXPERIENCE ─── */
+.xp-wrap{
+  background:var(--noir);
+  padding:96px 0 0;
+}
+.xp-intro{
+  padding:0 64px 72px;
+}
+.xp-entry{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  border-top:1px solid rgba(237,235,221,0.07);
+}
+.xp-entry:last-child{
+  border-bottom:1px solid rgba(237,235,221,0.07);
+  margin-bottom:96px;
+}
+.xp-left{
+  padding:56px 48px;
+  border-right:1px solid rgba(237,235,221,0.07);
+  position:relative;
+}
+.xp-left::before{
+  content:'';
+  position:absolute;
+  top:56px;left:0;
+  width:3px;height:32px;
+  background:var(--cherry);
+}
+.xp-period{
+  font-family:'Cormorant Garamond',serif;
+  font-size:16px;
+  font-style:italic;
+  color:var(--cherry);
+  display:block;
+  margin-bottom:8px;
+}
+.xp-loc{
+  font-size:9px;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.3);
+  font-weight:300;
+}
+.xp-right{
+  padding:56px 60px;
+}
+.xp-role{
+  font-family:'Cormorant Garamond',serif;
+  font-size:34px;
+  font-weight:400;
+  color:var(--cotton);
+  line-height:1.1;
+  margin-bottom:6px;
+}
+.xp-company{
+  font-size:9px;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color:var(--cherry);
+  margin-bottom:32px;
+  font-weight:500;
+}
+.xp-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+}
+.xp-list li{
+  font-size:13px;
+  color:rgba(237,235,221,0.5);
+  line-height:1.85;
+  font-weight:300;
+  padding-left:20px;
+  position:relative;
+}
+.xp-list li::before{
+  content:'';
+  position:absolute;
+  left:0;top:10px;
+  width:10px;height:1px;
+  background:var(--cherry);
+  opacity:0.6;
+}
+
+/* ─── EDUCATION ─── */
+.edu-wrap{
+  background:var(--noir2);
+}
+.edu-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid rgba(237,235,221,0.07);
+}
+.edu-cell{
+  padding:56px 56px;
+  border-right:1px solid rgba(237,235,221,0.07);
+  border-bottom:1px solid rgba(237,235,221,0.07);
+}
+.edu-cell:nth-child(2n){border-right:none}
+.edu-cell.cherry-bg{
+  background:var(--cherry);
+}
+.edu-cell.maroon-bg{
+  background:var(--maroon);
+}
+.edu-yr{
+  font-size:9px;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  margin-bottom:20px;
+  font-weight:400;
+}
+.edu-cell.cherry-bg .edu-yr,
+.edu-cell.maroon-bg .edu-yr{color:rgba(237,235,221,0.45)}
+.edu-cell:not(.cherry-bg):not(.maroon-bg) .edu-yr{color:var(--cherry)}
+.edu-school{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;
+  font-weight:400;
+  line-height:1.15;
+  margin-bottom:8px;
+}
+.edu-cell.cherry-bg .edu-school,
+.edu-cell.maroon-bg .edu-school{color:var(--cotton)}
+.edu-cell:not(.cherry-bg):not(.maroon-bg) .edu-school{color:var(--cotton)}
+.edu-deg{
+  font-size:11px;
+  letter-spacing:0.1em;
+  font-weight:300;
+}
+.edu-cell.cherry-bg .edu-deg,
+.edu-cell.maroon-bg .edu-deg{color:rgba(237,235,221,0.55)}
+.edu-cell:not(.cherry-bg):not(.maroon-bg) .edu-deg{color:rgba(237,235,221,0.45)}
+
+/* ─── CERTS ─── */
+.cert-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:22px 56px;
+  border-bottom:1px solid rgba(237,235,221,0.06);
+  transition:background 0.25s;
+}
+.cert-row:hover{background:rgba(129,1,0,0.08)}
+.cert-info{}
+.cert-name{
+  font-size:14px;
+  color:var(--cotton);
+  font-weight:300;
+  letter-spacing:0.04em;
+  margin-bottom:4px;
+}
+.cert-by{
+  font-size:9px;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.3);
+  font-weight:300;
+}
+.cert-year{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:24px;
+  color:var(--cherry);
+}
+
+/* ─── FOOTER ─── */
+footer{
+  background:var(--maroon);
+  padding:80px 64px 40px;
+}
+.footer-top{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  padding-bottom:64px;
+  border-bottom:1px solid rgba(237,235,221,0.1);
+  margin-bottom:40px;
+}
+.footer-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(44px,5vw,72px);
+  font-weight:300;
+  color:var(--cotton);
+  line-height:0.9;
+  letter-spacing:0.02em;
+}
+.footer-name em{
+  font-style:italic;
+  color:rgba(237,235,221,0.45);
+  display:block;
+  font-size:0.6em;
+  margin-top:8px;
+  letter-spacing:0.08em;
+}
+.footer-role{
+  font-size:9px;
+  letter-spacing:0.28em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.35);
+  margin-top:24px;
+  font-weight:300;
+  line-height:2.2;
+}
+.footer-contact-list{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:0;
+}
+.footer-contact-item{
+  display:flex;
+  align-items:baseline;
+  gap:20px;
+  padding:16px 0;
+  border-bottom:1px solid rgba(237,235,221,0.08);
+}
+.footer-contact-item:first-child{border-top:1px solid rgba(237,235,221,0.08)}
+.footer-contact-label{
+  font-size:8px;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color:var(--cherry);
+  min-width:60px;
+  font-weight:400;
+}
+.footer-contact-val{
+  font-size:13px;
+  color:rgba(237,235,221,0.5);
+  font-weight:300;
+  letter-spacing:0.04em;
+}
+.footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.footer-copy{
+  font-size:9px;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.2);
+}
+.footer-mark{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;
+  color:rgba(237,235,221,0.25);
+  letter-spacing:0.3em;
+}
+
+/* ─── SECTION DIVIDERS ─── */
+.chapter-band{
+  background:var(--cherry-dk);
+  padding:22px 64px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.chapter-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:11px;
+  font-style:italic;
+  color:rgba(237,235,221,0.3);
+  letter-spacing:0.1em;
+}
+.chapter-rule{
+  flex:1;height:1px;
+  background:rgba(237,235,221,0.07);
+  margin:0 32px;
+}
+.chapter-title{
+  font-size:8px;
+  letter-spacing:0.35em;
+  text-transform:uppercase;
+  color:rgba(237,235,221,0.35);
+  font-weight:300;
+}
+
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .nav-links{display:none}
+  .xp-entry{grid-template-columns:1fr}
+  .xp-left{border-right:none;border-bottom:1px solid rgba(237,235,221,0.07);padding:32px 32px}
+  .xp-right{padding:32px 32px}
+  .edu-grid{grid-template-columns:1fr}
+  .edu-cell:nth-child(2n){border-right:none}
+  .expertise-grid{grid-template-columns:1fr}
+  .exp-cell:nth-child(3n){border-right:1px solid rgba(237,235,221,0.07)}
+  .exp-cell:nth-child(odd){border-right:none}
+  .footer-top{grid-template-columns:1fr;gap:40px}
+  .hero-left,.expertise-intro,.xp-intro,.footer{padding-left:32px;padding-right:32px}
+  .cert-row{padding:18px 32px}
+  .chapter-band{padding:18px 32px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <span class="nav-monogram">C<span>·</span>R<span>·</span>T</span>
+  </div>
+  <div class="nav-links">
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Experience</a>
+    <a href="#credentials">Credentials</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      Open to Opportunities
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-edition">PR &amp; Brand Communications</div>
+    <h1 class="hero-name">
+      Chikitha<br>Reddy
+      <em class="hero-name-line2">Thipparthi</em>
+    </h1>
+    <div class="hero-divider">
+      <div class="hero-divider-line"></div>
+      <div class="hero-divider-diamond"></div>
+    </div>
+    <div class="hero-role">
+      Strategic · Storytelling · Impact-Driven<br>
+      FMCG &amp; Lifestyle · India &amp; Ireland
+    </div>
+    <div class="hero-contact">
+      <div class="hero-contact-item">+353 0899 696 268</div>
+      <div class="hero-contact-item">chikithareddy00@gmail.com</div>
+      <div class="hero-contact-item">Dublin, Ireland</div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <svg class="hero-right-texture" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background grid lines -->
+      <line x1="0" y1="150" x2="600" y2="150" stroke="rgba(237,235,221,0.04)" stroke-width="0.5"/>
+      <line x1="0" y1="300" x2="600" y2="300" stroke="rgba(237,235,221,0.04)" stroke-width="0.5"/>
+      <line x1="0" y1="450" x2="600" y2="450" stroke="rgba(237,235,221,0.04)" stroke-width="0.5"/>
+      <line x1="0" y1="600" x2="600" y2="600" stroke="rgba(237,235,221,0.04)" stroke-width="0.5"/>
+      <line x1="150" y1="0" x2="150" y2="900" stroke="rgba(237,235,221,0.03)" stroke-width="0.5"/>
+      <line x1="300" y1="0" x2="300" y2="900" stroke="rgba(237,235,221,0.03)" stroke-width="0.5"/>
+      <line x1="450" y1="0" x2="450" y2="900" stroke="rgba(237,235,221,0.03)" stroke-width="0.5"/>
+      <!-- Large monogram watermark -->
+      <text x="300" y="500" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="280" font-weight="300" fill="rgba(237,235,221,0.04)" letter-spacing="0">CRT</text>
+      <!-- Decorative circles -->
+      <circle cx="480" cy="160" r="100" fill="none" stroke="rgba(237,235,221,0.06)" stroke-width="0.5"/>
+      <circle cx="480" cy="160" r="70" fill="none" stroke="rgba(237,235,221,0.04)" stroke-width="0.5"/>
+      <!-- Bottom rose illustration -->
+      <ellipse cx="300" cy="750" rx="200" ry="80" fill="rgba(237,235,221,0.03)"/>
+      <!-- Abstract PR concept nodes -->
+      <circle cx="120" cy="300" r="40" fill="rgba(237,235,221,0.05)" stroke="rgba(237,235,221,0.1)" stroke-width="0.5"/>
+      <text x="120" y="305" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="9" fill="rgba(237,235,221,0.35)" letter-spacing="2">MEDIA</text>
+      <circle cx="480" cy="380" r="40" fill="rgba(237,235,221,0.05)" stroke="rgba(237,235,221,0.1)" stroke-width="0.5"/>
+      <text x="480" y="385" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="9" fill="rgba(237,235,221,0.35)" letter-spacing="2">BRAND</text>
+      <circle cx="300" cy="440" r="52" fill="rgba(129,1,0,0.25)" stroke="rgba(129,1,0,0.4)" stroke-width="1"/>
+      <text x="300" y="437" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="10" fill="rgba(237,235,221,0.6)" letter-spacing="2">PR</text>
+      <text x="300" y="453" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="10" fill="rgba(237,235,221,0.6)" letter-spacing="2">STRATEGY</text>
+      <line x1="155" y1="315" x2="248" y2="415" stroke="rgba(237,235,221,0.08)" stroke-width="0.5" stroke-dasharray="4 4"/>
+      <line x1="445" y1="390" x2="352" y2="432" stroke="rgba(237,235,221,0.08)" stroke-width="0.5" stroke-dasharray="4 4"/>
+    </svg>
+    <div class="hero-right-content">
+      <div class="hero-stat-grid">
+        <div class="hero-stat">
+          <div class="hero-stat-num">4+</div>
+          <div class="hero-stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Countries</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">MSc</div>
+          <div class="hero-stat-label">Management · DCU</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">LVMH</div>
+          <div class="hero-stat-label">Certified</div>
+        </div>
+      </div>
+      <div class="hero-quote">
+        <span class="hero-quote-mark">"</span>
+        Strategic communications that drive brand visibility and consumer engagement at the intersection of storytelling and impact.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<div class="chapter-band">
+  <span class="chapter-num">Chapter I</span>
+  <div class="chapter-rule"></div>
+  <span class="chapter-title">Areas of Mastery</span>
+</div>
+<section class="expertise-wrap" id="expertise">
+  <div class="expertise-intro reveal">
+    <div class="section-tag">Core Expertise</div>
+    <h2 class="section-heading">What I <em>Do Best</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="expertise-grid">
+    <div class="exp-cell reveal">
+      <div class="exp-cell-roman">I</div>
+      <div class="exp-cell-accent"></div>
+      <div class="exp-cell-title">PR &amp; Media Relations</div>
+      <div class="exp-cell-text">Tier 1 media outreach, journalist engagement, influencer strategy and press relations. Building consistent brand exposure across digital, print and social platforms through authentic storytelling.</div>
+    </div>
+    <div class="exp-cell reveal">
+      <div class="exp-cell-roman">II</div>
+      <div class="exp-cell-accent" style="background:var(--cotton);opacity:0.3"></div>
+      <div class="exp-cell-title">Campaigns &amp; Activations</div>
+      <div class="exp-cell-text">Integrated campaigns, press events, VIP experiences and brand activations across owned, earned and paid channels — from concept to measurable commercial impact.</div>
+    </div>
+    <div class="exp-cell reveal">
+      <div class="exp-cell-roman">III</div>
+      <div class="exp-cell-accent"></div>
+      <div class="exp-cell-title">Brand Narrative</div>
+      <div class="exp-cell-text">Press releases, editorial content and luxury brand positioning. Crafting storytelling assets that place brands firmly within premium lifestyle culture.</div>
+    </div>
+    <div class="exp-cell reveal">
+      <div class="exp-cell-roman">IV</div>
+      <div class="exp-cell-accent" style="background:var(--cotton);opacity:0.3"></div>
+      <div class="exp-cell-title">Strategy &amp; Insights</div>
+      <div class="exp-cell-text">Consumer behaviour analysis, trend identification, campaign optimisation and performance measurement — driving continuous improvement in ROI and brand equity.</div>
+    </div>
+    <div class="exp-cell reveal">
+      <div class="exp-cell-roman">V</div>
+      <div class="exp-cell-accent"></div>
+      <div class="exp-cell-title">Stakeholder Management</div>
+      <div class="exp-cell-text">Agency management, cross-functional leadership, partner collaboration and executive stakeholder liaison across complex, fast-paced organisations.</div>
+    </div>
+    <div class="exp-cell reveal" style="border-right:none">
+      <div class="exp-cell-roman">VI</div>
+      <div class="exp-cell-accent" style="background:var(--cotton);opacity:0.3"></div>
+      <div class="exp-cell-title">Digital &amp; Social</div>
+      <div class="exp-cell-text">Meta Ads, Google Ads, LinkedIn Campaign Manager, Brandwatch, Hootsuite and analytics-led social strategy. Data-informed decisions across all digital channels.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS BAND -->
+<div class="tools-band">
+  <div class="tools-track" id="toolsTrack"></div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="chapter-band">
+  <span class="chapter-num">Chapter II</span>
+  <div class="chapter-rule"></div>
+  <span class="chapter-title">Professional Record</span>
+</div>
+<section class="xp-wrap" id="experience">
+  <div class="xp-intro reveal">
+    <div class="section-tag">Work History</div>
+    <h2 class="section-heading">Professional <em>Experience</em></h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="xp-entry reveal">
+    <div class="xp-left">
+      <span class="xp-period">Apr 2022 — Jul 2024</span>
+      <span class="xp-loc">Hyderabad · India</span>
+    </div>
+    <div class="xp-right">
+      <div class="xp-role">PR &amp; Brand Communications Executive</div>
+      <div class="xp-company">KS PVT LTD — FMCG &amp; Lifestyle</div>
+      <ul class="xp-list">
+        <li>Developed and executed PR and communications strategies aligned with business objectives, driving brand visibility and consumer engagement across multiple channels</li>
+        <li>Built and nurtured relationships with journalists, influencers and media partners, securing consistent brand exposure across digital and social platforms</li>
+        <li>Led the planning and execution of brand events, press activations and experiential campaigns, increasing footfall and audience engagement</li>
+        <li>Delivered integrated PR campaigns across owned, earned and paid channels, ensuring consistent brand messaging and measurable commercial impact</li>
+        <li>Created compelling press materials and storytelling assets to position the brand within a premium and lifestyle context</li>
+        <li>Managed influencer and partner collaborations; analysed campaign performance to optimise strategy and improve ROI</li>
+        <li>Coordinated internal teams and external agencies to deliver campaigns on time and at high quality</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="xp-entry reveal">
+    <div class="xp-left" style="background:rgba(129,1,0,0.08)">
+      <span class="xp-period">Jan 2025 — Jul 2025</span>
+      <span class="xp-loc">Dublin · Ireland</span>
+    </div>
+    <div class="xp-right">
+      <div class="xp-role">Communications &amp; Events Executive</div>
+      <div class="xp-company">Daughters of Charity Child &amp; Family Services</div>
+      <ul class="xp-list">
+        <li>Led event communications and stakeholder coordination, delivering high-impact public engagement initiatives across Dublin</li>
+        <li>Developed digital content and managed communications across social channels, strengthening organisational brand presence</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="xp-entry reveal">
+    <div class="xp-left">
+      <span class="xp-period">Oct 2020 — Mar 2022</span>
+      <span class="xp-loc">Hyderabad · India</span>
+    </div>
+    <div class="xp-right">
+      <div class="xp-role">Marketing &amp; Campaign Executive</div>
+      <div class="xp-company" style="color:rgba(237,235,221,0.4)">Ardra — FMCG Brand</div>
+      <ul class="xp-list">
+        <li>Supported integrated marketing and PR campaigns, contributing to brand positioning, consumer engagement and trade event management across FMCG channels</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION + CERTS -->
+<div class="chapter-band">
+  <span class="chapter-num">Chapter III</span>
+  <div class="chapter-rule"></div>
+  <span class="chapter-title">Education &amp; Credentials</span>
+</div>
+<section class="edu-wrap" id="credentials">
+  <div class="edu-grid">
+    <div class="edu-cell cherry-bg reveal">
+      <div class="edu-yr">Sept 2024 — Jun 2025</div>
+      <div class="edu-school">Dublin City University</div>
+      <div class="edu-deg">MSc Management in Business · Dublin, Ireland</div>
+    </div>
+    <div class="edu-cell reveal">
+      <div class="edu-yr">Aug 2018 — Mar 2022</div>
+      <div class="edu-school">Creative Mentors Animation &amp; Gaming College</div>
+      <div class="edu-deg">B.A. Visual Arts · Hyderabad, India</div>
+    </div>
+  </div>
+  <div class="cert-row reveal">
+    <div class="cert-info">
+      <div class="cert-name">Fundamentals of Digital Marketing</div>
+      <div class="cert-by">Google · 2024</div>
+    </div>
+    <div class="cert-year">2024</div>
+  </div>
+  <div class="cert-row reveal">
+    <div class="cert-info">
+      <div class="cert-name">Business Ethics</div>
+      <div class="cert-by">Dublin City University · 2025</div>
+    </div>
+    <div class="cert-year">2025</div>
+  </div>
+  <div class="cert-row reveal">
+    <div class="cert-info">
+      <div class="cert-name">Inside LVMH Certificate</div>
+      <div class="cert-by">LVMH · 2024</div>
+    </div>
+    <div class="cert-year">2024</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-name">
+        Chikitha Reddy
+        <em>Thipparthi</em>
+      </div>
+      <div class="footer-role">
+        PR &amp; Brand Communications<br>
+        Dublin, Ireland · Open to Opportunities
+      </div>
+    </div>
+    <div class="footer-contact-list">
+      <div class="footer-contact-item">
+        <span class="footer-contact-label">Phone</span>
+        <span class="footer-contact-val">+353 0899 696 268</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-label">Email</span>
+        <span class="footer-contact-val">chikithareddy00@gmail.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-label">Location</span>
+        <span class="footer-contact-val">Dublin, Ireland</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="footer-contact-label">Status</span>
+        <span class="footer-contact-val">Open to opportunities</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">Chikitha Reddy Thipparthi · Portfolio · 2025</span>
+    <span class="footer-mark">C · R · T</span>
+  </div>
+</footer>
+
+<script>
+const tools = ['Brandwatch','Talkwalker','Google Analytics','Meta Ads','LinkedIn Campaign Manager','Canva','Adobe Creative Suite','Hootsuite','HubSpot','Salesforce','WordPress','Google Ads','Talkwalker'];
+const track = document.getElementById('toolsTrack');
+[...tools,...tools,...tools,...tools].forEach(t => {
+  const el = document.createElement('span');
+  el.className = 'tool-item';
+  el.textContent = t;
+  track.appendChild(el);
+});
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); }
+  });
+}, {threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
